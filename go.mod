@@ -8,11 +8,13 @@ require (
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/golang-migrate/migrate v3.5.4+incompatible
 	github.com/vektah/gqlparser/v2 v2.5.10
+	golang.org/x/crypto v0.15.0
 )
 
 require (
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/agnivade/levenshtein v1.1.1 // indirect
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/docker/distribution v2.8.2+incompatible // indirect
 	github.com/docker/docker v24.0.7+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
