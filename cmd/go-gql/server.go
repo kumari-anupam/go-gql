@@ -10,6 +10,7 @@ import (
 	"github.com/kumari-anupam/go-gql/graph"
 	"github.com/go-chi/chi"
 	"github.com/kumari-anupam/go-gql/internal/pkg/db/mysql"
+	"github.com/kumari-anupam/go-gql/internal/auth"
 )
 
 const defaultPort = "8080"
@@ -21,6 +22,7 @@ func main() {
 	}
 
 	router := chi.NewRouter()
+	router.Use(auth.Middleware())
 
 	database.InitDB()
 	defer database.CloseDB()
