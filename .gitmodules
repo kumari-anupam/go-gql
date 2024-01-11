@@ -1,0 +1,3 @@
+[submodule "submodules/image-store"]
+	path = submodules/image-store
+	url = git@github.com:kumari-anupam/image-store.git
